@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      Example Dashboard
+      <meta charset="utf-8">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Embed Demo</title>
+      {{ js_resources|indent(4)|safe }}
+      {{ css_resources|indent(4)|safe }}
+      {{ plot_script|indent(4)|safe }}
+      {{ plot_script2|indent(4)|safe }}
+      {{ plot_script|indent(4)|safe }}
+      {{ plot_script2|indent(4)|safe }}
+  </head>
+  <body>
+  <div style="width: 100%; overflow: hidden; background: pink;">
+      <div style="width: 600px; float: left; background: pink;"> {{ plot_div|indent(4)|safe }} </div>
+      <div style="width: 600px; float: left; background: pink;"> {{ plot_div2|indent(4)|safe }} </div>
+      <div style="margin-left: 100px; margin-right: 20px; background: pink; padding:20px; span:30px;">
+          This is the third div This is the third div This is the third divThis is the third div This is the third div This is the third divvvv
+      </div>
+  </div>
+  <div style="width: 100%; overflow: hidden; background: pink;">
+      <div style="width: 600px; float: left; background: pink;"> {{ plot_div|indent(4)|safe }} </div>
+      <div style="margin-left: 620px; background: pink;"> {{ plot_div2|indent(4)|safe }} </div>
+  </div>
+
+<!--      <div class="row mt-20">-->
+<!--          {{ plot_div|indent(4)|safe }}-->
+<!--      </div>-->
+<!--      <div class="row mt-5">-->
+<!--          {{ plot_div2|indent(4)|safe }}-->
+<!--      </div>-->
+  </body>
+</html>
